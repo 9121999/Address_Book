@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -64,9 +65,30 @@ namespace ADDRESSBOOK
                     Console.WriteLine("....Edited Contact List........");
                     Display();
                 }
-
             }
         }
+            public void DeleteContact(string name)
+            {
+                Contact delete = new Contact();
+                foreach (var contact in contacts)
+                {
+                    if (contact.FirstName == name)
+                    {
+                        delete = contact;
+                    }
+                }
+                contacts.Remove(delete);
+            }
+
+        }
     }
-}
+
     
+
+            
+                    
+
+        
+
+
+                 
