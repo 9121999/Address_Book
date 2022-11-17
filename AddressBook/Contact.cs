@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AddressBook
+namespace ADDRESSBOOK
 {
     internal class Contact
     {
@@ -16,5 +16,7 @@ namespace AddressBook
         public int Zip { get; set; }
         public string PhoneNo { get; set; }
         public string Email { get; set; }
+
+      
     }
 }
