@@ -32,7 +32,7 @@
                             Console.WriteLine("Enter Email");
                             contact.Email = Console.ReadLine();
                         }
-                        Console.WriteLine(" Added Contacts");
+                        Console.WriteLine("......Print Added Contacts......");
                         addressBook.AddContact(contact);
                         break;
                     //case 2:
